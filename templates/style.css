@@ -10,7 +10,7 @@
     margin-bottom:0px;
 }
 
-.jumbotron video {
+.jumbotron img {
     position: absolute;
     z-index: 1;
     top: 0;
