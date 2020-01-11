@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+{% block body %}
+    <div class="jumbotron jumbotron-fluid jumbo-no-mar">
+        <img src="/static/index-cover.jpg" alt="">
+
+        <div class="container text-white">
+
+            <h1 class="display-4">LOREM WEBSITE</h1>
+            <p class="lead">Platform to check out the specification for different brands of car, from affordable to luxury.</p>
+            <hr class="my-4">
+            <p>Click the CAR COMPARISON tab or scroll down to learn more.</p>
+            <a class="btn btn-primary btn-lg" href="#" role="button">About us</a>
+        
+        </div>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid jumbo-no-mar bg-light">
+        <div class="container">
+            <h2 class="display-5 text-left text-primary">SELECT CAR BY SEARCHING MODEL</h2>
+            <br>
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+
+            <h2 class="display-5 text-left py-5 text-primary">SELECT CAR BY MAKER</h2>
+
+            <!-- Cards for car brands-->
+            <div class="row">
+                <div class="col-4 col-sm-2"><a href="#" class="effect-shine no-link">Acura</a></div>
+                <div class="col-4 col-sm-2"><a href="#" class="effect-shine no-link">Alfa Romeo</a></div>
+                <div class="col-4 col-sm-2"><a href="#" class="effect-shine no-link">Aston Martin</a></div>
+                <div class="col-4 col-sm-2"><a href="#" class="effect-shine no-link">Audi</a></div>
+                <div class="col-4 col-sm-2"><a href="#" class="effect-shine no-link">Bentley</a></div>
+                <div class="col-4 col-sm-2"><a href="#" class="effect-shine no-link">BMW</a></div>
+                <div class="col-4 col-sm-2"><a href="#" class="effect-shine no-link">Bugatti</a></div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
