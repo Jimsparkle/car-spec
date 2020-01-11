@@ -1,32 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="static/style.css">
-  </head>
-  <body>
-
-    <nav class="navbar navbar-dark navbar-expand-sm text-white" style="background-color:black">
-        <div class="container">
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="mainNav">
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="#">HOME</a>
-                    <a class="nav-item nav-link" href="#">ABOUT</a>
-                    <a class="nav-item nav-link" href="#">CAR COMPARISON</a>
-                    <a class="nav-item nav-link" href="#">SEARCH BY MAKER</a>
-                </div>
-            </div>
-        </div>
-    </nav>
-
+{% extends "layout.html" %}
+{% block body %}
     <div class="jumbotron jumbotron-fluid jumbo-no-mar">
         <img src="/static/index-cover.jpg" alt="">
 
@@ -38,7 +11,7 @@
             <p>Click the CAR COMPARISON tab or scroll down to learn more.</p>
             <a class="btn btn-primary btn-lg" href="#" role="button">About us</a>
         
-          </div>
+        </div>
     </div>
 
     <div class="jumbotron jumbotron-fluid jumbo-no-mar bg-light">
@@ -64,28 +37,4 @@
             </div>
         </div>
     </div>
-
-    <!-- Footer -->
-    <footer class="page-footer font-small text-white bg-dark">
-
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2020 Copyright:
-          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> desmond.com</a>
-        </div>
-        <!-- Copyright -->
-      
-    </footer>
-    <!-- Footer -->
-
-
-    <!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    <script>
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip();
-        });
-    </script>
-  </body>
-</html>
+{% endblock %}
